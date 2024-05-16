@@ -7,10 +7,13 @@
     //Inserisco una condizione che assegna automaticamente pari se la risposta non è accettabile
 
 
-let userChoice = prompt("Scegli: pari o dispari").toLowerCase;
+let userChoice = (prompt("Scegli: pari o dispari")).toLowerCase;
 
-if ( userChoice != 'pari' || userChoice != 'dispari'){
-    userChoice = 'pari';
+const pari = 'pari';
+const dispari = 'dispari;'
+
+if ( userChoice != pari || userChoice != dispari){
+    userChoice = pari;
 
     console.log('Non valido, facciamo che sei pari')
 }
@@ -20,7 +23,7 @@ if ( userChoice != 'pari' || userChoice != 'dispari'){
 
 let userNumber = Number.parseInt(prompt("Scegli un numero da 1 a 5 inclusi"), 10);
 
-if (userNamber > 5 || userNumber < 1 || userNumber == isNaN) {
+if (userNumber > 5 || userNumber < 1 || userNumber == Number.isNaN) {
     userNumber = getNumber(1, 5);
 }
 
@@ -38,7 +41,21 @@ console.log(pcNumber)
 
 //Stampo in console la somma dei due numeri
 
+somma = userNumber + pcNumber;
+
+console.log(somma)
+
 //Creo una funzione che distingua un numero pari da un numero dispari
 
+function isEven (numero) {
+
+    if (numero % 2 === 0){
+        return true;
+    } else {
+        return false;
+    }
+}
+
 //Stampo in console il risultato
+
 
