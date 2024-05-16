@@ -16,7 +16,7 @@ const parolaUser = prompt('Scrivi una parola!');
 function getPalindromo (isPalindromo) {
     let parolaInvertita = '';
 
-    for (let i = isPalindromo.length - 1; i <= 0 ; i--){
+    for (let i = isPalindromo.length - 1; i >= 0 ; i--){
         parolaInvertita += isPalindromo[i];
     }
     if (parolaInvertita == isPalindromo){
