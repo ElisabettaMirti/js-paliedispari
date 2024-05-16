@@ -9,3 +9,15 @@
 //Inseirsco le condizioni:
     //Se la parola a rovescio è uguale alla parola di partenza = true
     //Se la parola a rovescio è diversa = false
+
+const parolaUser = prompt('Scrivi una parola!');
+
+
+function getPalindromo (isPalindromo) {
+    let parolaInvertita= '';
+
+    for (let i = parolaUser.length ; i <= 0 ; i--){
+        parolaInvertita += parolaUser[i];
+    }
+    
+}
