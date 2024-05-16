@@ -6,6 +6,15 @@
 //Creo un prompt che chieda all'utente se pari o dispari
     //Inserisco una condizione che assegna automaticamente pari se la risposta non è accettabile
 
+
+let userChoice = prompt("Scegli: pari o dispari").toLowerCase;
+
+if ( userChoice != 'pari' || userChoice != 'dispari'){
+    userChoice = 'pari';
+    
+    console.log('Non valido, facciamo che sei pari')
+}
+
 //Creo un prompt che chieda all'utente un numero da 1 a 5
     //Inserisco una condizione che rifiuta quasiasi risposta che non sia un numero da 1 a 5
 
@@ -16,3 +25,4 @@
 //Creo una funzione che distingua un numero pari da un numero dispari
 
 //Stampo in console il risultato
+
