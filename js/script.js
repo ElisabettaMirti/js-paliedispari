@@ -14,15 +14,16 @@ const parolaUser = prompt('Scrivi una parola!');
 
 
 function getPalindromo (isPalindromo) {
-    let parolaInvertita= '';
+    let parolaInvertita = '';
 
-    for (let i = parolaUser.length ; i <= 0 ; i--){
-        parolaInvertita += parolaUser[i];
+    for (let i = isPalindromo.length - 1; i <= 0 ; i--){
+        parolaInvertita += isPalindromo[i];
     }
-    if (parolaInvertita == parolaUser){
+    if (parolaInvertita == isPalindromo){
         return true;
     } else {
         return false;
     }
 }
 
+console.log(getPalindromo(parolaUser));
