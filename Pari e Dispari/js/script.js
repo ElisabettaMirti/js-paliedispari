@@ -58,4 +58,14 @@ function isEven (numero) {
 
 //Stampo in console il risultato
 
+if (isEven(somma) == true && userChoice == pari) {
+    console.log('Hai vinto tu')
+} else if (isEven(somma) == true && userChoice != pari) {
+    console.log('Ho vinto io!')
+} else if (isEven(somma) == false && userChoice == pari) {
+    console.log('Ho vinto io!')
+} else if (isEven == false && userChoice != pari) {
+    console.log('Hai vinto tu')
+}
+
 
