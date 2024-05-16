@@ -19,5 +19,10 @@ function getPalindromo (isPalindromo) {
     for (let i = parolaUser.length ; i <= 0 ; i--){
         parolaInvertita += parolaUser[i];
     }
-    
+    if (parolaInvertita == parolaUser){
+        return true;
+    } else {
+        return false;
+    }
 }
+
