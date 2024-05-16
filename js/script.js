@@ -3,6 +3,9 @@
 // Creare una funzione per capire se la parola inserita è palindroma
 
 
-//Creo una variabile con prompt in cui chiedo all'utente una parola
+//Creo una variabile con prompt in cui chiedo all'utente una parola X
 
-//Creo una funzione con ciclo for che metta a confronto le lettere partendo dall'inizio e dalla fine 
+//Creo una funzione con ciclo for che parte dalla fine della parola X
+//Inseirsco le condizioni:
+    //Se la parola a rovescio è uguale alla parola di partenza = true
+    //Se la parola a rovescio è diversa = false
