@@ -21,14 +21,20 @@ if ( userChoice != 'pari' || userChoice != 'dispari'){
 let userNumber = Number.parseInt(prompt("Scegli un numero da 1 a 5 inclusi"), 10);
 
 if (userNamber > 5 || userNumber < 1 || userNumber == isNaN) {
-    userNumber = getNumber();
+    userNumber = getNumber(1, 5);
 }
+
+console.log(userNumber)
 
 //Creo una funzione che generi un numero random da 1 a 5 per il computer
 
-function getNumber (numero) {
-    
+function getNumber (min, max) {
+    const randomNumber = Math.floor(Math.random() * (max - min + 1) + min);
+    return randomNumber;
 }
+
+pcNumber = getNumber(1, 5);
+console.log(pcNumber)
 
 //Stampo in console la somma dei due numeri
 
